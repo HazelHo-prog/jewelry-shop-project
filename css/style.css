@@ -1,0 +1,214 @@
+body{
+    background-color: #120016;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #f5e9ff;
+}
+*{
+    box-sizing: border-box;
+}
+.toplink{
+    background-color: #1a0624;
+    overflow: hidden;
+    border-bottom: 1px solid #7a1fa2;
+}
+.toplink a{
+    color: #ffffff;
+    float: left;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 14px 16px;
+}
+.toplink a:hover{
+    background-color: #ff4fd8;
+    color: #120016;
+    text-decoration: none;
+}
+.toplink-right{
+    float: right;
+}
+.banner{
+    background: linear-gradient(135deg, #1a0624, #5b167a, #ff4fd8);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.row:after{
+    display: flex;
+    content: "";
+    clear: both;
+}
+.content{
+    float: left;
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+}
+.right_side_bar{
+    float: left;
+    width: 30%;
+    background-color: #22092f;
+    padding: 20px;
+    color: #f5e9ff;
+}
+.footer{
+    background-color: #1a0624;
+    color: #ffffff;
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #7a1fa2;
+}
+h1{
+    text-transform: capitalize;
+}
+h2{
+    text-decoration: none;
+    color: #ff4fd8;
+    text-align: left;
+}
+p{
+    text-align: justify;
+}
+.underline{
+    text-decoration: underline;
+}
+.team_img{
+    overflow: hidden;
+    text-align: center;
+}
+.team_img img{
+    width: 180px;
+    height: 240px;
+    padding: 5px;
+    border-radius: 20%;
+    border: 2px solid #7a1fa2;
+}
+.team_member{
+    text-align: center;
+    font-size: small;
+    color: #ff88e8;
+    font-style: italic;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px #7a1fa2 solid;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+table th{
+    border: 1px #7a1fa2 solid;
+    padding: 8px;
+    text-align: left;
+    background-color: #5b167a;
+    color: #ffffff;
+}
+table td{
+    border: 1px #7a1fa2 solid;
+    padding: 8px;
+    text-align: left;
+    color: #f5e9ff;
+}
+tr:nth-child(even){
+    background-color: #22092f;
+}
+tbody tr:hover{
+    background-color: #3a0f52;
+}
+.contactForm input[type="text"], .contactForm input[type="email"], .contactForm input[type="tel"], .contactForm select{
+    width: 70%;
+    padding: 12px 20px;
+    border: 1px solid #7a1fa2;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    background-color: #1a0624;
+    color: #f5e9ff;
+}
+.contactForm textarea{
+    width: 70%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #7a1fa2;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    margin: 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a0624;
+    color: #f5e9ff;
+}
+.contactForm input[type="submit"]{
+    background-color: #ff4fd8;
+    color: #120016;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+.authForm input[type="text"], .authForm input[type="email"], .authForm input[type="tel"], .authForm input[type="password"]{
+    width: 70%;
+    padding: 12px 20px;
+    border: 0px solid #ccc;
+    border-bottom: 2px solid #ff4fd8;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    background-color: #120016;
+    color: #f5e9ff;
+}
+.authForm input[type="submit"]{
+    background-color: #7a1fa2;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+.authForm label{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #7a1fa2;
+    border-radius: 5px;
+    background-color: #1a0624;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #120016;
+    color: #f5e9ff;
+    border: 1px solid #7a1fa2;
+}
+.error {
+    color: #ff6b6b;
+    margin: 0;
+}
+.success {
+    color: #61ffb0;
+    margin: 0;
+}
+.field {
+    margin-bottom: 12px;
+}
