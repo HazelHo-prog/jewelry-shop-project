@@ -1,214 +1,257 @@
 body{
-    background-color: #120016;
+    background: linear-gradient(to right, #0d0d0d, #4b0082, #ff69b4);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.8;
     font-size: 16px;
-    color: #f5e9ff;
+    color: white;
 }
+
 *{
     box-sizing: border-box;
 }
+
 .toplink{
-    background-color: #1a0624;
+    background-color: #0d0d0d;
     overflow: hidden;
-    border-bottom: 1px solid #7a1fa2;
 }
+
 .toplink a{
     color: #ffffff;
     float: left;
     display: block;
     text-decoration: none;
-    text-align: left;
-    padding: 14px 16px;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
+
 .toplink a:hover{
-    background-color: #ff4fd8;
-    color: #120016;
-    text-decoration: none;
+    background-color: #ff69b4;
+    color: #ffffff;
 }
+
 .toplink-right{
     float: right;
 }
+
 .banner{
-    background: linear-gradient(135deg, #1a0624, #5b167a, #ff4fd8);
+    background: linear-gradient(to right, #4b0082, #7b2cbf, #ff69b4);
     color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
+
 .row:after{
-    display: flex;
     content: "";
+    display: table;
     clear: both;
 }
+
 .content{
     float: left;
     width: 70%;
     padding: 20px;
     text-align: left;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,105,180,0.3);
 }
+
 .right_side_bar{
     float: left;
     width: 30%;
-    background-color: #22092f;
+    background: rgba(255,255,255,0.1);
     padding: 20px;
-    color: #f5e9ff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,105,180,0.3);
 }
+
 .footer{
-    background-color: #1a0624;
-    color: #ffffff;
+    background-color: #0d0d0d;
+    color: #ff69b4;
     font-size: small;
     text-align: center;
-    padding: 10px;
-    border-top: 1px solid #7a1fa2;
+    padding: 15px;
+    margin-top: 20px;
 }
+
 h1{
     text-transform: capitalize;
+    color: #ff69b4;
+    text-align: center;
+    font-size: 3em;
 }
+
 h2{
-    text-decoration: none;
-    color: #ff4fd8;
+    color: #d8b4fe;
     text-align: left;
 }
+
 p{
     text-align: justify;
 }
+
 .underline{
     text-decoration: underline;
 }
+
 .team_img{
     overflow: hidden;
     text-align: center;
 }
+
 .team_img img{
     width: 180px;
     height: 240px;
     padding: 5px;
     border-radius: 20%;
-    border: 2px solid #7a1fa2;
+    border: 3px solid #ff69b4;
 }
+
 .team_member{
     text-align: center;
     font-size: small;
-    color: #ff88e8;
+    color: #ff69b4;
     font-style: italic;
     font-weight: normal;
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/* Table Design */
 table{
     border-collapse: collapse;
     width: 80%;
-    border: 1px #7a1fa2 solid;
-    border-spacing: 0;
+    border: 1px solid #7b2cbf;
     margin: 0 auto;
+    background-color: white;
+    color: black;
 }
+
 table th{
-    border: 1px #7a1fa2 solid;
+    border: 1px solid #7b2cbf;
     padding: 8px;
     text-align: left;
-    background-color: #5b167a;
-    color: #ffffff;
+    background-color: #4b0082;
+    color: white;
 }
+
 table td{
-    border: 1px #7a1fa2 solid;
+    border: 1px solid #7b2cbf;
     padding: 8px;
     text-align: left;
-    color: #f5e9ff;
 }
+
 tr:nth-child(even){
-    background-color: #22092f;
+    background-color: #f4e6ff;
 }
+
 tbody tr:hover{
-    background-color: #3a0f52;
+    background-color: #ffd6eb;
 }
-.contactForm input[type="text"], .contactForm input[type="email"], .contactForm input[type="tel"], .contactForm select{
+
+/* Contact Form */
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="tel"],
+.contactForm select{
     width: 70%;
     padding: 12px 20px;
-    border: 1px solid #7a1fa2;
+    border: 2px solid #7b2cbf;
     border-radius: 4px;
     resize: vertical;
-    box-sizing: border-box;
-    font-size: 1.6em;
-    background-color: #1a0624;
-    color: #f5e9ff;
+    font-size: 1.2em;
 }
+
 .contactForm textarea{
     width: 70%;
     height: 150px;
     padding: 12px 20px;
-    border: 1px solid #7a1fa2;
+    border: 2px solid #7b2cbf;
     border-radius: 4px;
     resize: vertical;
-    box-sizing: border-box;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin: 8px 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #1a0624;
-    color: #f5e9ff;
 }
+
 .contactForm input[type="submit"]{
-    background-color: #ff4fd8;
-    color: #120016;
+    background: linear-gradient(to right, #7b2cbf, #ff69b4);
+    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1.6em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-.authForm input[type="text"], .authForm input[type="email"], .authForm input[type="tel"], .authForm input[type="password"]{
+
+.contactForm input[type="submit"]:hover{
+    opacity: 0.9;
+}
+
+/* Authentication Forms */
+.authForm input[type="text"],
+.authForm input[type="email"],
+.authForm input[type="tel"],
+.authForm input[type="password"]{
     width: 70%;
     padding: 12px 20px;
-    border: 0px solid #ccc;
-    border-bottom: 2px solid #ff4fd8;
+    border: none;
+    border-bottom: 2px solid #ff69b4;
     border-radius: 4px;
-    resize: vertical;
-    box-sizing: border-box;
-    font-size: 1.6em;
-    background-color: #120016;
-    color: #f5e9ff;
+    font-size: 1.2em;
 }
+
 .authForm input[type="submit"]{
-    background-color: #7a1fa2;
-    color: #ffffff;
+    background: linear-gradient(to right, #7b2cbf, #ff69b4);
+    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1.6em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
+
 .authForm label{
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
 }
-.registration-form {
+
+/* Registration Form */
+.registration-form{
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #7a1fa2;
-    border-radius: 5px;
-    background-color: #1a0624;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #ff69b4;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,105,180,0.3);
 }
-input {
+
+input{
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #120016;
-    color: #f5e9ff;
-    border: 1px solid #7a1fa2;
 }
-.error {
-    color: #ff6b6b;
+
+.error{
+    color: #ff4d6d;
     margin: 0;
 }
-.success {
-    color: #61ffb0;
+
+.success{
+    color: #90ee90;
     margin: 0;
 }
-.field {
+
+.field{
     margin-bottom: 12px;
 }
