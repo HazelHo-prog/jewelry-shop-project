@@ -1,44 +1,74 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Glow Jewelry</title>
-
-<link
-rel="stylesheet"
-href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Jewelry | FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+<nav class="navbar navbar-expand-lg navbar-glow sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand-mark" href="index.html">Glow<span>Jewelry</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteNav" aria-controls="siteNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="siteNav" aria-labelledby="siteNavLabel">
+      <div class="offcanvas-header d-lg-none">
+        <h5 class="offcanvas-title" id="siteNavLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<div class="toplink">
+<header class="hero-mini">
+  <div class="container page-intro">
+    <span class="badge-soft mb-3">FAQ</span>
+    <h1 class="display-5 fw-bold">Quick answers to common questions.</h1>
+    <p class="lead text-secondary">Find details about materials, delivery, care instructions, and ordering.</p>
+  </div>
+</header>
 
-<a href="index.html">Home</a>
+<main class="section">
+  <div class="container">
+    <div class="accordion faq-item" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Are your pieces suitable for everyday wear?</button></h2>
+        <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Our collection is selected for comfort, light wearability, and easy styling with everyday outfits.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Do you offer gift packaging?</button></h2>
+        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Every order comes in gift-ready packaging, making it easier to send directly to someone special.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">How should I care for my jewelry?</button></h2>
+        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Store pieces separately, keep them dry, and clean gently with a soft cloth after use.</div></div>
+      </div>
+    </div>
+  </div>
+</main>
 
-<a href="about.html">About</a>
+<footer class="footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-3 align-items-center">
+    <p class="mb-0">© 2026 Glow Jewelry.</p>
+    <div class="d-flex gap-3"><a href="contact.html">Contact</a><a href="products.html">Products</a></div>
+  </div>
+</footer>
 
-<a href="products.html">Products</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="blog.html">Blog</a>
-
-<a href="faq.html">FAQ</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<body>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
