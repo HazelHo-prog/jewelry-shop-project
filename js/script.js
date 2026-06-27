@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
         filterButtons.forEach((btn) => btn.classList.remove("active"));
         button.classList.add("active");
 
-        const filter = button.getAttribute("data-filter");
+        const filter = button.dataset.filter;
 
         filterItems.forEach((item) => {
-          const category = item.getAttribute("data-category");
+          const category = item.dataset.category;
           const showItem = filter === "all" || filter === category;
           item.style.display = showItem ? "" : "none";
         });
@@ -31,16 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const emailFields = document.querySelectorAll('input[type="email"]');
+  const emailInputs = document.querySelectorAll('input[type="email"]');
 
-  emailFields.forEach((field) => {
-    field.addEventListener("input", () => {
-      if (field.value.trim() === "") {
-        field.setCustomValidity("");
-      } else if (!field.checkValidity()) {
-        field.setCustomValidity("Please enter a valid email address.");
+  emailInputs.forEach((input) => {
+    input.addEventListener("input", () => {
+      if (input.value.trim() === "") {
+        input.setCustomValidity("");
+        return;
+      }
+
+      if (input.validity.typeMismatch) {
+        input.setCustomValidity("Please enter a valid email address.");
       } else {
-        field.setCustomValidity("");
+        input.setCustomValidity("");
       }
     });
   });
