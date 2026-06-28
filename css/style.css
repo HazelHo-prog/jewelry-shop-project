@@ -11,6 +11,15 @@
   --radius:22px;
 }
 
+.card-glow {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-glow:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(242, 167, 198, 0.25);
+}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
